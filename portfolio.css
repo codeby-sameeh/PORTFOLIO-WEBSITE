@@ -1,0 +1,241 @@
+*{
+    margin: 0%;
+    padding: 0%;
+
+}
+
+.navbar{
+    width: 100%;
+    height: 150px;
+   
+    display: flex;
+    backdrop-filter: blur(10px);
+    
+
+}
+.nav1{
+    width: 50%;
+    height: 100%;
+   /* background-image: url(picture/login\ page\ bgArtboard\ 1\ \(1\).jpg); */
+   backdrop-filter: blur(10px);
+    background-color: greenyellow;
+    display: flex;
+   align-items: end;
+   padding-left: 50px;
+   color: black;
+   /* border-bottom: .1px solid white; */
+
+}
+.nav2{
+    width: 50%;
+    height: 100%;
+   /* background-image: url(picture/login\ page\ bgArtboard\ 1\ \(1\).jpg); */
+   backdrop-filter: blur(10px);
+    background-color: greenyellow;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    justify-content: space-evenly;
+    gap: 70px;
+    padding-right: 30px;
+     
+ 
+   
+}
+.nav2 :hover{
+    color: white;
+  scale: 1.2;
+}
+a{
+    text-decoration: none;
+    color: black;
+   
+}
+ a :hover{
+}
+.main1{
+    width: 100%;
+    height: 820px;
+   background-color: black;
+   display: flex;
+}
+.content{
+   width: 50%;
+   height: 100%;
+   background-color: black;
+   color: white;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   text-align: start;
+   align-items: start;
+   gap: 15px;
+   padding-left: 100px;
+}
+.profile{
+    width: 50%;
+   height: 100%;
+   background-color: black;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+img{
+    object-fit: cover;
+    /* height: ; */
+    /* filter: grayscale(0%); */
+    animation: image 1s infinite ;
+}
+
+.sameeh{
+   color: antiquewhite;
+   animation: sameeh 1s ease-in infinite;
+
+}
+@keyframes sameeh{
+    0%{
+        opacity: .5;
+       transform: translateY(100px);
+    }
+    100%{
+        transform: translateY(300px);
+    }
+}
+@keyframes image{
+
+    0%{
+        transform: translate(0px);
+    }
+    100%{
+        
+        transform: translate(10px);
+
+    }
+}
+
+
+
+
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: black; }
+}
+
+.typing-container {
+    display: inline-block;
+    overflow: hidden; /* Ensures the text stays within the container */
+    border-right: .15em solid black; /* Creates the blinking cursor effect */
+    white-space: nowrap; /* Prevents the text from wrapping */
+   font-size: 50px;
+   position: relative;
+   top: 50px;
+}
+
+.typing-text {
+    font-family: serif;
+    font-size: 45px; /* Adjust the size as needed */
+    display: inline-block;
+    overflow: hidden; /* Ensures the text stays within the container */
+    white-space: nowrap; /* Prevents the text from wrapping */
+    border-right: .15em solid black; /* Creates the blinking cursor effect */
+    animation: typing 4s steps(30, end) infinite, blink-caret .75s step-end infinite;
+    position: relative;
+   left: 150px;
+   bottom: 20px;
+   color: greenyellow;
+}
+button{
+    height: 50px;
+    width: 200px;
+    background-color: greenyellow;
+    border-radius: 50px;
+    margin-top: 40px;
+    border: none;
+    box-shadow: 0px 0px 10px 1px greenyellow;
+}
+
+.conteiner1{
+    width: 100vw;
+    height: 100vh;
+  background-color: black;
+   display: flex;
+  align-items: center;
+   justify-content: center;
+}
+.maain{
+    height: 550px;
+    width: 1000px;
+    background-color: black;
+    display: flex;
+    border-radius: 100px;
+    box-shadow: 10px 10px 20px 10px greenyellow;
+  animation: card 1s forwards;
+}
+@keyframes card{
+    0%{
+       transform: translate(-100px);
+    }
+    100%{
+        transform: translate(0px);
+     
+    }
+}
+.caard1{
+    width: 50%;
+    height: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 20px;
+    gap: 30px;
+    color: white;
+    border-radius: 40px;
+
+}
+.caard1 h2{
+  font-size: 30px;
+  font-family: 'Courier New', Courier, monospace;
+}
+.caard1 p{
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 1px;
+    line-height: 20px;
+}
+.caard2{
+    width: 50%;
+    height: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+
+}
+.round1{
+    height: 400px;
+    width: 400px;
+    background-color: burlywood;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.round1 img{
+    position: absolute;
+    bottom:50px ;
+    left: 15px;
+    height: 400px;
+    width: 400px;
+}
